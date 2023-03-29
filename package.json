@@ -1,0 +1,27 @@
+{
+  "name": "page-saver",
+  "version": "1.0.0",
+  "description": "Periodic webpage saver",
+  "main": "src/index.ts",
+  "scripts": {
+    "init": "rimraf dist/** && npm run copyjs",
+    "build": "tsc -p tsconfig.build.json && npm run copyjs",
+    "copyjs": "copyfiles -f src/in-browser/**/*.js dist/in-browser/",
+    "start": "npm run build && node --unhandled-rejections=strict dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanandrewks/page-saver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanandrewks/page-saver/issues"
+  },
+  "homepage": "https://github.com/jordanandrewks/page-saver#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
