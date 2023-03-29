@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jordanandrewks/page-saver/issues"
   },
-  "homepage": "https://github.com/jordanandrewks/page-saver#readme"
+  "homepage": "https://github.com/jordanandrewks/page-saver#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
 }
